@@ -145,11 +145,12 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
   }
   
   .contributor-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
   }
   
   .contributor-img {
@@ -158,6 +159,12 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     border-radius: 50%;
     margin-bottom: 15px;
     border: 3px solid #3498db;
+    transition: transform 0.4s ease-in-out, border-color 0.4s ease;
+  }
+  
+  .contributor-card:hover .contributor-img {
+    transform: scale(1.05);
+    border-color: #2980b9;
   }
   
   .contributor-link {
@@ -171,7 +178,7 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     padding: 8px 16px;
     background-color: #f1f1f1;
     border-radius: 25px;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     width: 80%;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
@@ -179,13 +186,18 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   .contributor-link i {
     margin-right: 8px;
     font-size: 1.2rem;
+    transition: transform 0.4s ease;
   }
   
   .contributor-link:hover {
     background-color: #333;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+  
+  .contributor-link:hover i {
+    transform: rotate(360deg);
   }
   
   @media (max-width: 768px) {
