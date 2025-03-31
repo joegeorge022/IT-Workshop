@@ -48,8 +48,7 @@ The gallery displays images in a grid, and when an image is clicked, it opens in
 
 👉 [See the live implementation](index.html) of this image gallery slider.
 
-{% unless site.github %}
-<style>
+<style type="text/css">
 .back-btn {
   display: inline-block;
   background-color: #f1f1f1;
@@ -65,4 +64,3 @@ The gallery displays images in a grid, and when an image is clicked, it opens in
   background-color: #ddd;
 }
 </style>
-{% endunless %}

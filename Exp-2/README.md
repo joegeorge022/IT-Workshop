@@ -45,8 +45,7 @@ The form looks similar to Experiment 1 but includes validation feedback when use
 
 👉 [See the live implementation](index.html) of this form validation example.
 
-{% unless site.github %}
-<style>
+<style type="text/css">
 .back-btn {
   display: inline-block;
   background-color: #f1f1f1;
@@ -62,4 +61,3 @@ The form looks similar to Experiment 1 but includes validation feedback when use
   background-color: #ddd;
 }
 </style>
-{% endunless %}

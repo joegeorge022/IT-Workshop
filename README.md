@@ -60,8 +60,7 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   <p>&copy; 2025 IT Workshop | All Rights Reserved</p>
 </div>
 
-{% if site.github %}
-<style>
+<style type="text/css">
   .btn {
     display: inline-block;
     background-color: #3498db;
@@ -112,4 +111,3 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     }
   }
 </style>
-{% endif %}
