@@ -135,7 +135,8 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    margin: 30px 0;
+    margin: 30px auto;
+    max-width: 800px;
   }
   
   .contributor-card {
@@ -196,9 +197,35 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     text-decoration: none !important;
   }
   
+  .footer {
+    text-align: center;
+    margin: 40px auto 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    max-width: 800px;
+  }
+  
   @media (max-width: 768px) {
     .resources, .contributors {
       flex-direction: column;
+      align-items: center;
+    }
+    
+    .contributor-card {
+      width: 85%;
+      max-width: 300px;
+      margin: 0 auto 20px;
+    }
+    
+    .resource {
+      width: 85%;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+    
+    .footer {
+      width: 90%;
+      padding: 0 15px;
     }
   }
 </style>
