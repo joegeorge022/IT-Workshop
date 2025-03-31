@@ -40,6 +40,7 @@ When properly rendered, the login form appears centered on the page with a clean
 <div class="experiment-nav">
   <span class="nav-disabled">Exp-1</span>
   <a href="../Exp-2/README.html" class="nav-btn" target="_blank">Exp-2</a>
+  <a href="../Exp-3/README.html" class="nav-btn" target="_blank">Exp-3</a>
 </div>
 
 <style type="text/css">
