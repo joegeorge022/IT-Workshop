@@ -107,8 +107,17 @@ When properly rendered, the login form appears centered on the page with a clean
 
 <div class="experiment-nav">
   <span class="nav-disabled">Exp-1</span>
-  <a href="../Exp-2/README.html" class="nav-btn" >Exp-2</a>
-  <a href="../Exp-3/README.html" class="nav-btn" >Exp-3</a>
+  <a href="#" onclick="checkNavAccess(2); return false;" class="nav-btn">Exp-2</a>
+  <a href="#" onclick="checkNavAccess(3); return false;" class="nav-btn">Exp-3</a>
+</div>
+
+<div id="password-prompt" class="password-prompt" style="display: none;">
+  <h3>Enter Password</h3>
+  <div class="password-form">
+    <input type="password" id="exp-password" class="password-input" placeholder="Enter experiment password">
+    <button onclick="submitPassword()" class="password-submit">Submit</button>
+    <p><a href="#" onclick="cancelPassword(); return false;">Cancel</a></p>
+  </div>
 </div>
 
 <style type="text/css">
@@ -160,4 +169,73 @@ When properly rendered, the login form appears centered on the page with a clean
   font-weight: bold;
   cursor: not-allowed;
 }
+
+.password-prompt {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.password-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.password-submit {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.password-submit:hover {
+  background-color: #2980b9;
+}
 </style>
+
+<script>
+function checkNavAccess(expNumber) {
+  if (localStorage.getItem(`exp-${expNumber}-access`) === "granted") {
+    window.location.href = `../Exp-${expNumber}/README.html`;
+  } else {
+    document.getElementById('password-prompt').style.display = 'block';
+    localStorage.setItem('target-exp', expNumber);
+  }
+}
+
+function submitPassword() {
+  const password = document.getElementById('exp-password').value;
+  const targetExp = localStorage.getItem('target-exp');
+  const passwords = {
+    1: "html2025",
+    2: "js2025",
+    3: "gallery2025"
+  };
+  
+  if (password === passwords[targetExp]) {
+    localStorage.setItem(`exp-${targetExp}-access`, "granted");
+    window.location.href = `../Exp-${targetExp}/README.html`;
+  } else {
+    alert("Incorrect password. Please try again.");
+  }
+}
+
+function cancelPassword() {
+  document.getElementById('password-prompt').style.display = 'none';
+  localStorage.removeItem('target-exp');
+}
+</script>
