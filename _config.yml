@@ -2,3 +2,5 @@ theme: jekyll-theme-cayman
 title: IT Workshop
 description: Web development experiments for IT Workshop
 show_downloads: false
+github:
+  is_project_page: false
