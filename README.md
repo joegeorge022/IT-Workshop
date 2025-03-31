@@ -1,3 +1,8 @@
+---
+layout: default
+title: IT Workshop
+---
+
 # IT Workshop
 
 Welcome to the IT Workshop repository. This project contains three experiments that demonstrate basic web development concepts.
