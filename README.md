@@ -26,19 +26,27 @@ Learn how to create a basic web page with HTML and CSS and deploy it on a local 
   </form>
 </div>
 
-<a href="Exp-1/README.html" class="btn" >View Experiment 1</a>
-
 ### Experiment 2: Use JavaScript to validate forms
 
 Implement client-side form validation using JavaScript to enhance user experience and data integrity.
 
-<a href="Exp-2/README.html" class="btn" >View Experiment 2</a>
+<div class="protected-content">
+  <form class="password-form" onsubmit="return checkPassword(2)">
+    <input type="password" id="password-2" class="password-input" placeholder="Enter password to view">
+    <button type="submit" class="password-submit">Access Experiment 2</button>
+  </form>
+</div>
 
 ### Experiment 3: Create an image slider using HTML, CSS, and JavaScript
 
 Build an interactive image slider/gallery with navigation controls using HTML, CSS, and JavaScript.
 
-<a href="Exp-3/README.html" class="btn" >View Experiment 3</a>
+<div class="protected-content">
+  <form class="password-form" onsubmit="return checkPassword(3)">
+    <input type="password" id="password-3" class="password-input" placeholder="Enter password to view">
+    <button type="submit" class="password-submit">Access Experiment 3</button>
+  </form>
+</div>
 
 ## 📚 Learning Resources
 
@@ -494,9 +502,13 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
 <script>
   function checkPassword(experimentId) {
     const password = document.getElementById(`password-${experimentId}`).value;
-    const correctPassword = "workshop2025"; 
+    const passwords = {
+      1: "html2025",
+      2: "js2025",
+      3: "gallery2025"
+    };
     
-    if (password === correctPassword) {
+    if (password === passwords[experimentId]) {
       localStorage.setItem(`exp-${experimentId}-access`, "granted");
       window.location.href = `Exp-${experimentId}/README.html`;
     } else {
