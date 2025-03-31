@@ -7,6 +7,12 @@ title: IT Workshop
 
 Welcome to the IT Workshop repository. This project contains three experiments that demonstrate basic web development concepts.
 
+<div class="download-section">
+  <a href="files/syllabus.pdf" download class="download-btn">
+    <i class="fas fa-download"></i> Download Syllabus
+  </a>
+</div>
+
 ## 📋 Experiments
 
 ### Experiment 1: Create a web page and deploy on a local web server
@@ -96,6 +102,35 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     text-decoration: none;
   }
   
+  .download-section {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .download-btn {
+    display: inline-block;
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .download-btn:hover {
+    background-color: #219653;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+  }
+  
+  .download-btn i {
+    margin-right: 8px;
+  }
+  
   .resources {
     display: flex;
     flex-wrap: wrap;
@@ -156,8 +191,8 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   }
   
   .contributor-img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 15px;
     border: 3px solid #3498db;
