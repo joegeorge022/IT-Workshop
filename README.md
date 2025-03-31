@@ -424,6 +424,15 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     margin: 30px auto;
     max-width: 800px;
   }
+
+  .teachers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 30px auto;
+    max-width: 800px;
+  }
   
   .teacher-card {
     width: 250px;
