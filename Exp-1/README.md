@@ -37,8 +37,7 @@ When properly rendered, the login form appears centered on the page with a clean
 
 👉 [See the live implementation](index.html) of this login page.
 
-{% unless site.github %}
-<style>
+<style type="text/css">
 .back-btn {
   display: inline-block;
   background-color: #f1f1f1;
@@ -54,4 +53,3 @@ When properly rendered, the login form appears centered on the page with a clean
   background-color: #ddd;
 }
 </style>
-{% endunless %}
