@@ -492,12 +492,12 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   }
   
   @media (max-width: 768px) {
-    .resources, .contributors {
+    .resources, .contributors, .teachers {
       flex-direction: column;
       align-items: center;
     }
     
-    .contributor-card {
+    .contributor-card, .teacher-card {
       width: 85%;
       max-width: 300px;
       margin: 0 auto 20px;
