@@ -31,18 +31,21 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
 
 <div class="resources">
   <div class="resource">
+    <i class="fab fa-html5 resource-icon"></i>
     <h3>HTML</h3>
     <p>Learn the fundamentals of HTML to structure web content</p>
     <a href="https://www.w3schools.com/html/" target="_blank" class="btn">Learn HTML</a>
   </div>
   
   <div class="resource">
+    <i class="fab fa-css3-alt resource-icon"></i>
     <h3>CSS</h3>
     <p>Master CSS to style and layout your web pages effectively</p>
     <a href="https://www.w3schools.com/css/" target="_blank" class="btn">Learn CSS</a>
   </div>
   
   <div class="resource">
+    <i class="fab fa-js resource-icon"></i>
     <h3>JavaScript</h3>
     <p>Explore JavaScript to add interactivity to your websites</p>
     <a href="https://www.w3schools.com/js/" target="_blank" class="btn">Learn JavaScript</a>
@@ -56,7 +59,7 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     <img src="https://github.com/Ananthan-didnot.png" alt="Ananthakrishnan K V" class="contributor-img">
     <h3>Ananthakrishnan K V</h3>
     <a href="https://github.com/Ananthan-didnot" target="_blank" class="contributor-link">
-      <i class="fab fa-github"></i> GitHub
+      <i class="fab fa-github"></i> View Profile
     </a>
   </div>
   
@@ -64,7 +67,7 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     <img src="https://github.com/joegeorge022.png" alt="Joe George" class="contributor-img">
     <h3>Joe George</h3>
     <a href="https://github.com/joegeorge022/" target="_blank" class="contributor-link">
-      <i class="fab fa-github"></i> GitHub
+      <i class="fab fa-github"></i> View Profile
     </a>
   </div>
   
@@ -73,26 +76,6 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
 <br>
 
 <div class="footer">
-  <div class="tech-icons">
-    <div class="tech-icon">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
-        <i class="fab fa-html5"></i>
-        <span>HTML5</span>
-      </a>
-    </div>
-    <div class="tech-icon">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
-        <i class="fab fa-css3-alt"></i>
-        <span>CSS3</span>
-      </a>
-    </div>
-    <div class="tech-icon">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-        <i class="fab fa-js"></i>
-        <span>JavaScript</span>
-      </a>
-    </div>
-  </div>
   <p>&copy; 2025 IT Workshop | All Rights Reserved</p>
 </div>
 
@@ -125,6 +108,26 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     padding: 20px;
     background-color: #f8f9fa;
     border-radius: 8px;
+    text-align: center;
+    position: relative;
+    padding-top: 40px;
+  }
+  
+  .resource-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .resource:nth-child(1) .resource-icon {
+    color: #E34F26;
+  }
+  
+  .resource:nth-child(2) .resource-icon {
+    color: #1572B6;
+  }
+  
+  .resource:nth-child(3) .resource-icon {
+    color: #F7DF1E;
   }
   
   .contributors {
@@ -158,63 +161,31 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   }
   
   .contributor-link {
-    display: inline-block;
-    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
     padding: 8px 16px;
     background-color: #f1f1f1;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .contributor-link i {
+    margin-right: 8px;
+    font-size: 1.2rem;
   }
   
   .contributor-link:hover {
-    background-color: #e0e0e0;
-  }
-  
-  .tech-icons {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 20px;
-  }
-  
-  .tech-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 14px;
-  }
-  
-  .tech-icon a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.2s ease;
-  }
-  
-  .tech-icon a:hover {
-    transform: scale(1.1);
-  }
-  
-  .tech-icon i {
-    font-size: 2.5rem;
-    margin-bottom: 8px;
-  }
-  
-  .tech-icon:nth-child(1) i {
-    color: #E34F26;
-  }
-  
-  .tech-icon:nth-child(2) i {
-    color: #1572B6;
-  }
-  
-  .tech-icon:nth-child(3) i {
-    color: #F7DF1E;
+    background-color: #333;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   }
   
   @media (max-width: 768px) {
