@@ -156,8 +156,8 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   }
   
   .contributor-img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 15px;
     border: 3px solid #3498db;
