@@ -37,4 +37,4 @@ The implementation is contained in a single HTML file that includes:
 
 The gallery displays images in a grid, and when an image is clicked, it opens in a full-screen modal with navigation controls.
 
-[Back to Main Page](../)
+[Back to Main Page](../README.md)
