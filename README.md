@@ -58,17 +58,27 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     <div class="contributor-card">
     <img src="https://github.com/Ananthan-didnot.png" alt="Ananthakrishnan K V" class="contributor-img">
     <h3>Ananthakrishnan K V</h3>
-    <a href="https://github.com/Ananthan-didnot" target="_blank" class="contributor-link">
-      <i class="fab fa-github"></i> View Profile
-    </a>
+    <div class="social-links">
+      <a href="https://github.com/Ananthan-didnot" target="_blank" class="contributor-link">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/ananthakrishnan-k-v-b58193329/" target="_blank" class="contributor-link linkedin">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
   </div>
   
   <div class="contributor-card">
     <img src="https://github.com/joegeorge022.png" alt="Joe George" class="contributor-img">
     <h3>Joe George</h3>
-    <a href="https://github.com/joegeorge022/" target="_blank" class="contributor-link">
-      <i class="fab fa-github"></i> View Profile
-    </a>
+    <div class="social-links">
+      <a href="https://github.com/joegeorge022/" target="_blank" class="contributor-link">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/joegeorge022/" target="_blank" class="contributor-link linkedin">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
   </div>
   
 </div>
@@ -146,12 +156,12 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .contributor-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
   }
   
   .contributor-img {
@@ -179,9 +189,13 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     padding: 8px 16px;
     background-color: #f1f1f1;
     border-radius: 25px;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.3s ease;
     width: 80%;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .contributor-link.linkedin {
+    background-color: #f1f1f1;
   }
   
   .contributor-link i {
@@ -193,8 +207,12 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     background-color: #333;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     text-decoration: none !important;
+  }
+  
+  .contributor-link.linkedin:hover {
+    background-color: #0077b5;
   }
   
   .footer {
