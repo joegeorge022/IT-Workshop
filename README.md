@@ -13,19 +13,19 @@ Welcome to the IT Workshop repository. This project contains three experiments t
 
 Learn how to create a basic web page with HTML and CSS and deploy it on a local web server.
 
-<a href="Exp-1/README.html" class="btn">View Experiment 1</a>
+<a href="Exp-1/README.html" class="btn" target="_blank">View Experiment 1</a>
 
 ### Experiment 2: Use JavaScript to validate forms
 
 Implement client-side form validation using JavaScript to enhance user experience and data integrity.
 
-<a href="Exp-2/README.html" class="btn">View Experiment 2</a>
+<a href="Exp-2/README.html" class="btn" target="_blank">View Experiment 2</a>
 
 ### Experiment 3: Create an image slider using HTML, CSS, and JavaScript
 
 Build an interactive image slider/gallery with navigation controls using HTML, CSS, and JavaScript.
 
-<a href="Exp-3/README.html" class="btn">View Experiment 3</a>
+<a href="Exp-3/README.html" class="btn" target="_blank">View Experiment 3</a>
 
 ## 📚 Learning Resources
 
@@ -49,15 +49,18 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   </div>
 </div>
 
+<br>
+
 <div class="footer">
   <div class="badges">
-    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"></a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"></a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"></a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"></a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"></a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"></a>
   </div>
   <p>&copy; 2025 IT Workshop | All Rights Reserved</p>
 </div>
 
+{% unless site.github %}
 <style>
   .btn {
     display: inline-block;
@@ -109,3 +112,4 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     }
   }
 </style>
+{% endunless %}

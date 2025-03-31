@@ -3,6 +3,8 @@ layout: default
 title: Experiment 2 - Form Validation
 ---
 
+<a href="../README.html" class="back-btn" target="_blank">← Back to Main Page</a>
+
 # Experiment 2: Use JavaScript to validate forms
 
 This experiment demonstrates how to implement client-side form validation using JavaScript.
@@ -43,4 +45,21 @@ The form looks similar to Experiment 1 but includes validation feedback when use
 
 👉 [See the live implementation](index.html) of this form validation example.
 
-[Back to Main Page](../README.html)
+{% unless site.github %}
+<style>
+.back-btn {
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.back-btn:hover {
+  background-color: #ddd;
+}
+</style>
+{% endunless %}

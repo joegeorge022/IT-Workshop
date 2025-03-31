@@ -3,6 +3,8 @@ layout: default
 title: Experiment 3 - Image Slider
 ---
 
+<a href="../README.html" class="back-btn" target="_blank">← Back to Main Page</a>
+
 # Experiment 3: Create an image slider using HTML, CSS, and JavaScript
 
 This experiment demonstrates how to build an interactive image gallery with slider functionality.
@@ -46,4 +48,21 @@ The gallery displays images in a grid, and when an image is clicked, it opens in
 
 👉 [See the live implementation](index.html) of this image gallery slider.
 
-[Back to Main Page](../README.html)
+{% unless site.github %}
+<style>
+.back-btn {
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.back-btn:hover {
+  background-color: #ddd;
+}
+</style>
+{% endunless %}

@@ -3,6 +3,8 @@ layout: default
 title: Experiment 1 - Web Page Creation
 ---
 
+<a href="../README.html" class="back-btn" target="_blank">← Back to Main Page</a>
+
 # Experiment 1: Create a web page and deploy on a local web server
 
 This experiment demonstrates how to create a simple login page using HTML and CSS and deploy it on a local web server.
@@ -35,4 +37,21 @@ When properly rendered, the login form appears centered on the page with a clean
 
 👉 [See the live implementation](index.html) of this login page.
 
-[Back to Main Page](../README.html)
+{% unless site.github %}
+<style>
+.back-btn {
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.back-btn:hover {
+  background-color: #ddd;
+}
+</style>
+{% endunless %}
