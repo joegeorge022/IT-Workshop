@@ -7,7 +7,7 @@ title: IT Workshop
 
 Welcome to the IT Workshop repository. This project contains three experiments that demonstrate basic web development concepts.
 
-## 🧪 Experiments
+## 📋 Experiments
 
 <div class="experiments-container">
   <div class="experiment-card">

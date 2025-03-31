@@ -35,4 +35,4 @@ When properly rendered, the login form appears centered on the page with a clean
 
 👉 [See the live implementation](index.html) of this login page.
 
-[Back to Main Page](../)
+[Back to Main Page](../README.html)

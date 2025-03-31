@@ -46,4 +46,4 @@ The gallery displays images in a grid, and when an image is clicked, it opens in
 
 👉 [See the live implementation](index.html) of this image gallery slider.
 
-[Back to Main Page](../)
+[Back to Main Page](../README.html)
