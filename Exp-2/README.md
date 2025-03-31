@@ -46,9 +46,9 @@ The form looks similar to Experiment 1 but includes validation feedback when use
 👉 <a href="index.html" target="_blank">See the live implementation</a> of this form validation example.
 
 <div class="experiment-nav">
-  <a href="../Exp-1/README.html" class="nav-btn" target="_blank">Exp-1</a>
+  <a href="../Exp-1/README.html" class="nav-btn" >Exp-1</a>
   <span class="nav-disabled">Exp-2</span>
-  <a href="../Exp-3/README.html" class="nav-btn" target="_blank">Exp-3</a>
+  <a href="../Exp-3/README.html" class="nav-btn" >Exp-3</a>
 </div>
 
 <style type="text/css">

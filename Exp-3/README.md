@@ -49,8 +49,8 @@ The gallery displays images in a grid, and when an image is clicked, it opens in
 👉 <a href="index.html" target="_blank">See the live implementation</a> of this image gallery slider.
 
 <div class="experiment-nav">
-  <a href="../Exp-1/README.html" class="nav-btn" target="_blank">Exp-1</a>
-  <a href="../Exp-2/README.html" class="nav-btn" target="_blank">Exp-2</a>
+  <a href="../Exp-1/README.html" class="nav-btn" >Exp-1</a>
+  <a href="../Exp-2/README.html" class="nav-btn" >Exp-2</a>
   <span class="nav-disabled">Exp-3</span>
 </div>
 
