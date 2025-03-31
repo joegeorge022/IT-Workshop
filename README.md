@@ -186,7 +186,6 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   .contributor-link i {
     margin-right: 8px;
     font-size: 1.2rem;
-    transition: transform 0.4s ease;
   }
   
   .contributor-link:hover {
@@ -194,10 +193,6 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-  }
-  
-  .contributor-link:hover i {
-    transform: rotate(360deg);
   }
   
   @media (max-width: 768px) {
