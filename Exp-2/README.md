@@ -43,4 +43,4 @@ The form looks similar to Experiment 1 but includes validation feedback when use
 
 👉 [See the live implementation](index.html) of this form validation example.
 
-[Back to Main Page](../README.md)
+[Back to Main Page](../)
