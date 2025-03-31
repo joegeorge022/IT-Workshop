@@ -94,6 +94,22 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   
 </div>
 
+## 👩‍🏫 Teachers
+
+<div class="teachers">
+  <div class="teacher-card">
+    <img src="files/anu.jpg" alt="Anu V Kottath" class="teacher-img">
+    <h3>Anu V Kottath</h3>
+    <p class="teacher-role">Assistant Professor</p>
+  </div>
+  
+  <div class="teacher-card">
+    <img src="files/subini.jpg" alt="Subini Therese Babu" class="teacher-img">
+    <h3>Subini Therese Babu</h3>
+    <p class="teacher-role">Assistant Professor</p>
+  </div>
+</div>
+
 <br>
 
 <div class="footer">
@@ -408,6 +424,50 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     margin: 30px auto;
     max-width: 800px;
   }
+
+  .teachers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 30px auto;
+    max-width: 800px;
+  }
+  
+  .teacher-card {
+    width: 250px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .teacher-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+  
+  .teacher-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #27ae60;
+    transition: transform 0.4s ease-in-out, border-color 0.4s ease;
+  }
+  
+  .teacher-card:hover .teacher-img {
+    transform: scale(1.05);
+    border-color: #219653;
+  }
+  
+  .teacher-role {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-top: 5px;
+  }
   
   .contributor-card {
     width: 250px;
@@ -476,12 +536,12 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   }
   
   @media (max-width: 768px) {
-    .resources, .contributors {
+    .resources, .contributors, .teachers {
       flex-direction: column;
       align-items: center;
     }
     
-    .contributor-card {
+    .contributor-card, .teacher-card {
       width: 85%;
       max-width: 300px;
       margin: 0 auto 20px;
