@@ -172,7 +172,7 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     align-items: center;
     justify-content: center;
     margin-top: 15px;
-    text-decoration: none;
+    text-decoration: none !important;
     color: #333;
     font-weight: bold;
     padding: 8px 16px;
@@ -193,6 +193,7 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    text-decoration: none !important;
   }
   
   @media (max-width: 768px) {
