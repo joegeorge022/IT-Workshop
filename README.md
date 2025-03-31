@@ -94,6 +94,22 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   
 </div>
 
+## 👩‍🏫 Teachers
+
+<div class="teachers">
+  <div class="teacher-card">
+    <img src="files/anu.png" alt="Anu V Kottath" class="teacher-img">
+    <h3>Anu V Kottath</h3>
+    <p class="teacher-role">Assistant Professor</p>
+  </div>
+  
+  <div class="teacher-card">
+    <img src="files/subini.png" alt="Subini Therese Babu" class="teacher-img">
+    <h3>Subini Therese Babu</h3>
+    <p class="teacher-role">Assistant Professor</p>
+  </div>
+</div>
+
 <br>
 
 <div class="footer">
