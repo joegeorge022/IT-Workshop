@@ -43,7 +43,13 @@ The form looks similar to Experiment 1 but includes validation feedback when use
 
 ## View Implementation
 
-👉 [See the live implementation](index.html) of this form validation example.
+👉 <a href="index.html" target="_blank">See the live implementation</a> of this form validation example.
+
+<div class="experiment-nav">
+  <a href="../Exp-1/README.html" class="nav-btn" target="_blank">Exp-1</a>
+  <span class="nav-disabled">Exp-2</span>
+  <a href="../Exp-3/README.html" class="nav-btn" target="_blank">Exp-3</a>
+</div>
 
 <style type="text/css">
 .back-btn {
@@ -59,5 +65,36 @@ The form looks similar to Experiment 1 but includes validation feedback when use
 
 .back-btn:hover {
   background-color: #ddd;
+}
+
+.experiment-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.nav-btn {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.nav-btn:hover {
+  background-color: #2980b9;
+}
+
+.nav-disabled {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #999;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: not-allowed;
 }
 </style>

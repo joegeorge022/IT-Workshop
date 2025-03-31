@@ -35,7 +35,12 @@ When properly rendered, the login form appears centered on the page with a clean
 
 ## View Implementation
 
-👉 [See the live implementation](index.html) of this login page.
+👉 <a href="index.html" target="_blank">See the live implementation</a> of this login page.
+
+<div class="experiment-nav">
+  <span class="nav-disabled">Exp-1</span>
+  <a href="../Exp-2/README.html" class="nav-btn" target="_blank">Exp-2</a>
+</div>
 
 <style type="text/css">
 .back-btn {
@@ -51,5 +56,36 @@ When properly rendered, the login form appears centered on the page with a clean
 
 .back-btn:hover {
   background-color: #ddd;
+}
+
+.experiment-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.nav-btn {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.nav-btn:hover {
+  background-color: #2980b9;
+}
+
+.nav-disabled {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #999;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: not-allowed;
 }
 </style>

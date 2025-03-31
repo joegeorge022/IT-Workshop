@@ -46,7 +46,12 @@ The gallery displays images in a grid, and when an image is clicked, it opens in
 
 ## View Implementation
 
-👉 [See the live implementation](index.html) of this image gallery slider.
+👉 <a href="index.html" target="_blank">See the live implementation</a> of this image gallery slider.
+
+<div class="experiment-nav">
+  <a href="../Exp-2/README.html" class="nav-btn" target="_blank">Exp-2</a>
+  <span class="nav-disabled">Exp-3</span>
+</div>
 
 <style type="text/css">
 .back-btn {
@@ -62,5 +67,36 @@ The gallery displays images in a grid, and when an image is clicked, it opens in
 
 .back-btn:hover {
   background-color: #ddd;
+}
+
+.experiment-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.nav-btn {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.nav-btn:hover {
+  background-color: #2980b9;
+}
+
+.nav-disabled {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #999;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: not-allowed;
 }
 </style>
