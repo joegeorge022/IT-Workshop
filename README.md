@@ -38,7 +38,7 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   
   <div class="resource">
     <h3>CSS</h3>
-    <p>Master CSS to style and layout your web pages</p>
+    <p>Master CSS to style and layout your web pages effectively</p>
     <a href="https://www.w3schools.com/css/" target="_blank" class="btn">Learn CSS</a>
   </div>
   
