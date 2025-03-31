@@ -20,7 +20,7 @@ Welcome to the IT Workshop repository. This project contains three experiments t
 Learn how to create a basic web page with HTML and CSS and deploy it on a local web server.
 
 <div class="protected-content">
-  <form class="password-form" onsubmit="return checkPassword(1)">
+  <form id="password-form-1" class="password-form" onsubmit="return checkPassword(1)">
     <input type="password" id="password-1" class="password-input" placeholder="Enter password to view">
     <button type="submit" class="password-submit">Access Experiment 1</button>
   </form>
@@ -31,7 +31,7 @@ Learn how to create a basic web page with HTML and CSS and deploy it on a local 
 Implement client-side form validation using JavaScript to enhance user experience and data integrity.
 
 <div class="protected-content">
-  <form class="password-form" onsubmit="return checkPassword(2)">
+  <form id="password-form-2" class="password-form" onsubmit="return checkPassword(2)">
     <input type="password" id="password-2" class="password-input" placeholder="Enter password to view">
     <button type="submit" class="password-submit">Access Experiment 2</button>
   </form>
@@ -42,7 +42,7 @@ Implement client-side form validation using JavaScript to enhance user experienc
 Build an interactive image slider/gallery with navigation controls using HTML, CSS, and JavaScript.
 
 <div class="protected-content">
-  <form class="password-form" onsubmit="return checkPassword(3)">
+  <form id="password-form-3" class="password-form" onsubmit="return checkPassword(3)">
     <input type="password" id="password-3" class="password-input" placeholder="Enter password to view">
     <button type="submit" class="password-submit">Access Experiment 3</button>
   </form>
@@ -583,6 +583,20 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
       const expNumber = path.match(/Exp-(\d+)/)[1];
       if (!localStorage.getItem(`exp-${expNumber}-access`)) {
         window.location.href = "../README.html";
+      }
+    }
+    
+    for (let i = 1; i <= 3; i++) {
+      if (localStorage.getItem(`exp-${i}-access`) === "granted") {
+        const passwordForm = document.getElementById(`password-form-${i}`);
+        const viewButton = document.createElement('a');
+        viewButton.href = `Exp-${i}/README.html`;
+        viewButton.className = 'download-btn';
+        viewButton.innerHTML = '<i class="fas fa-eye"></i> View Experiment';
+        
+        if (passwordForm) {
+          passwordForm.parentNode.replaceChild(viewButton, passwordForm);
+        }
       }
     }
   });
