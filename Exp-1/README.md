@@ -1,3 +1,8 @@
+---
+layout: default
+title: Experiment 1 - Web Page Creation
+---
+
 # Experiment 1: Create a web page and deploy on a local web server
 
 This experiment demonstrates how to create a simple login page using HTML and CSS and deploy it on a local web server.

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Experiment 3 - Image Slider
+---
+
 # Experiment 3: Create an image slider using HTML, CSS, and JavaScript
 
 This experiment demonstrates how to build an interactive image gallery with slider functionality.

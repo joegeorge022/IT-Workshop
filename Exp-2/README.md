@@ -1,3 +1,8 @@
+---
+layout: default
+title: Experiment 2 - Form Validation
+---
+
 # Experiment 2: Use JavaScript to validate forms
 
 This experiment demonstrates how to implement client-side form validation using JavaScript.
