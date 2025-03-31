@@ -37,4 +37,8 @@ The implementation is contained in a single HTML file that includes:
 
 The gallery displays images in a grid, and when an image is clicked, it opens in a full-screen modal with navigation controls.
 
+## View Implementation
+
+👉 [See the live implementation](index.html) of this image gallery slider.
+
 [Back to Main Page](../README.md)

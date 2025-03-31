@@ -34,4 +34,8 @@ The implementation consists of three main files:
 
 The form looks similar to Experiment 1 but includes validation feedback when users attempt to submit invalid data.
 
+## View Implementation
+
+👉 [See the live implementation](index.html) of this form validation example.
+
 [Back to Main Page](../README.md)

@@ -26,4 +26,8 @@ The implementation consists of two main files:
 
 When properly rendered, the login form appears centered on the page with a clean white background and blue accent colors.
 
+## View Implementation
+
+👉 [See the live implementation](index.html) of this login page.
+
 [Back to Main Page](../README.md)
