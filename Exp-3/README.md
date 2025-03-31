@@ -3,7 +3,7 @@ layout: default
 title: Experiment 3 - Image Slider
 ---
 
-<a href="../README.html" class="back-btn" target="_blank">← Back to Main Page</a>
+<a href="../README.html" class="back-btn" >← Back to Main Page</a>
 
 # Experiment 3: Create an image slider using HTML, CSS, and JavaScript
 
@@ -68,6 +68,7 @@ The gallery displays images in a grid, and when an image is clicked, it opens in
 
 .back-btn:hover {
   background-color: #ddd;
+  text-decoration: none;
 }
 
 .experiment-nav {
@@ -89,6 +90,7 @@ The gallery displays images in a grid, and when an image is clicked, it opens in
 
 .nav-btn:hover {
   background-color: #2980b9;
+  text-decoration: none;
 }
 
 .nav-disabled {

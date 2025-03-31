@@ -13,19 +13,19 @@ Welcome to the IT Workshop repository. This project contains three experiments t
 
 Learn how to create a basic web page with HTML and CSS and deploy it on a local web server.
 
-<a href="Exp-1/README.html" class="btn" target="_blank">View Experiment 1</a>
+<a href="Exp-1/README.html" class="btn" >View Experiment 1</a>
 
 ### Experiment 2: Use JavaScript to validate forms
 
 Implement client-side form validation using JavaScript to enhance user experience and data integrity.
 
-<a href="Exp-2/README.html" class="btn" target="_blank">View Experiment 2</a>
+<a href="Exp-2/README.html" class="btn" >View Experiment 2</a>
 
 ### Experiment 3: Create an image slider using HTML, CSS, and JavaScript
 
 Build an interactive image slider/gallery with navigation controls using HTML, CSS, and JavaScript.
 
-<a href="Exp-3/README.html" class="btn" target="_blank">View Experiment 3</a>
+<a href="Exp-3/README.html" class="btn" >View Experiment 3</a>
 
 ## 📚 Learning Resources
 
@@ -93,6 +93,7 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   
   .btn:hover {
     background-color: #2980b9;
+    text-decoration: none;
   }
   
   .resources {

@@ -3,7 +3,7 @@ layout: default
 title: Experiment 1 - Web Page Creation
 ---
 
-<a href="../README.html" class="back-btn" target="_blank">← Back to Main Page</a>
+<a href="../README.html" class="back-btn" >← Back to Main Page</a>
 
 # Experiment 1: Create a web page and deploy on a local web server
 
@@ -53,10 +53,12 @@ When properly rendered, the login form appears centered on the page with a clean
   border-radius: 4px;
   margin-bottom: 20px;
   font-size: 14px;
+
 }
 
 .back-btn:hover {
   background-color: #ddd;
+  text-decoration: none;
 }
 
 .experiment-nav {
@@ -78,6 +80,7 @@ When properly rendered, the login form appears centered on the page with a clean
 
 .nav-btn:hover {
   background-color: #2980b9;
+  text-decoration: none;
 }
 
 .nav-disabled {

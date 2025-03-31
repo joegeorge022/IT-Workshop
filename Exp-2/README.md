@@ -3,7 +3,7 @@ layout: default
 title: Experiment 2 - Form Validation
 ---
 
-<a href="../README.html" class="back-btn" target="_blank">← Back to Main Page</a>
+<a href="../README.html" class="back-btn" >← Back to Main Page</a>
 
 # Experiment 2: Use JavaScript to validate forms
 
@@ -65,6 +65,7 @@ The form looks similar to Experiment 1 but includes validation feedback when use
 
 .back-btn:hover {
   background-color: #ddd;
+  text-decoration: none;
 }
 
 .experiment-nav {
@@ -86,6 +87,7 @@ The form looks similar to Experiment 1 but includes validation feedback when use
 
 .nav-btn:hover {
   background-color: #2980b9;
+  text-decoration: none;
 }
 
 .nav-disabled {
