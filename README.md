@@ -58,27 +58,17 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     <div class="contributor-card">
     <img src="https://github.com/Ananthan-didnot.png" alt="Ananthakrishnan K V" class="contributor-img">
     <h3>Ananthakrishnan K V</h3>
-    <div class="social-links">
-      <a href="https://github.com/Ananthan-didnot" target="_blank" class="contributor-link">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/ananthakrishnan-k-v-b58193329/" target="_blank" class="contributor-link linkedin">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-    </div>
+    <a href="https://github.com/Ananthan-didnot" target="_blank" class="contributor-link">
+      <i class="fab fa-github"></i> View Profile
+    </a>
   </div>
   
   <div class="contributor-card">
     <img src="https://github.com/joegeorge022.png" alt="Joe George" class="contributor-img">
     <h3>Joe George</h3>
-    <div class="social-links">
-      <a href="https://github.com/joegeorge022/" target="_blank" class="contributor-link">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/joegeorge022/" target="_blank" class="contributor-link linkedin">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-    </div>
+    <a href="https://github.com/joegeorge022/" target="_blank" class="contributor-link">
+      <i class="fab fa-github"></i> View Profile
+    </a>
   </div>
   
 </div>
@@ -160,8 +150,8 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   }
   
   .contributor-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   }
   
   .contributor-img {
@@ -194,10 +184,6 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
-  .contributor-link.linkedin {
-    background-color: #f1f1f1;
-  }
-  
   .contributor-link i {
     margin-right: 8px;
     font-size: 1.2rem;
@@ -206,13 +192,9 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   .contributor-link:hover {
     background-color: #333;
     color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
     text-decoration: none !important;
-  }
-  
-  .contributor-link.linkedin:hover {
-    background-color: #0077b5;
   }
   
   .footer {
