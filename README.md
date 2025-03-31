@@ -56,7 +56,7 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     <img src="https://github.com/Ananthan-didnot.png" alt="Ananthakrishnan K V" class="contributor-img">
     <h3>Ananthakrishnan K V</h3>
     <a href="https://github.com/Ananthan-didnot" target="_blank" class="contributor-link">
-      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+      <i class="fab fa-github"></i> GitHub
     </a>
   </div>
   
@@ -64,7 +64,7 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     <img src="https://github.com/joegeorge022.png" alt="Joe George" class="contributor-img">
     <h3>Joe George</h3>
     <a href="https://github.com/joegeorge022/" target="_blank" class="contributor-link">
-      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+      <i class="fab fa-github"></i> GitHub
     </a>
   </div>
   
@@ -73,10 +73,25 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
 <br>
 
 <div class="footer">
-  <div class="badges">
-    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"></a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"></a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"></a>
+  <div class="tech-icons">
+    <div class="tech-icon">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+        <i class="fab fa-html5"></i>
+        <span>HTML5</span>
+      </a>
+    </div>
+    <div class="tech-icon">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+        <i class="fab fa-css3-alt"></i>
+        <span>CSS3</span>
+      </a>
+    </div>
+    <div class="tech-icon">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <i class="fab fa-js"></i>
+        <span>JavaScript</span>
+      </a>
+    </div>
   </div>
   <p>&copy; 2025 IT Workshop | All Rights Reserved</p>
 </div>
@@ -145,20 +160,61 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   .contributor-link {
     display: inline-block;
     margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
   }
   
-  .footer {
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #eee;
-    text-align: center;
+  .contributor-link:hover {
+    background-color: #e0e0e0;
   }
   
-  .badges {
+  .tech-icons {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 15px;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .tech-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .tech-icon a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
+  }
+  
+  .tech-icon a:hover {
+    transform: scale(1.1);
+  }
+  
+  .tech-icon i {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+  }
+  
+  .tech-icon:nth-child(1) i {
+    color: #E34F26;
+  }
+  
+  .tech-icon:nth-child(2) i {
+    color: #1572B6;
+  }
+  
+  .tech-icon:nth-child(3) i {
+    color: #F7DF1E;
   }
   
   @media (max-width: 768px) {
@@ -167,3 +223,4 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     }
   }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
