@@ -49,6 +49,27 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   </div>
 </div>
 
+## 👨‍💻 Contributors
+
+<div class="contributors">
+    <div class="contributor-card">
+    <img src="https://github.com/Ananthan-didnot.png" alt="Ananthakrishnan K V" class="contributor-img">
+    <h3>Ananthakrishnan K V</h3>
+    <a href="https://github.com/Ananthan-didnot" target="_blank" class="contributor-link">
+      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+    </a>
+  </div>
+  
+  <div class="contributor-card">
+    <img src="https://github.com/joegeorge022.png" alt="Joe George" class="contributor-img">
+    <h3>Joe George</h3>
+    <a href="https://github.com/joegeorge022/" target="_blank" class="contributor-link">
+      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+    </a>
+  </div>
+  
+</div>
+
 <br>
 
 <div class="footer">
@@ -91,6 +112,41 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     border-radius: 8px;
   }
   
+  .contributors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  
+  .contributor-card {
+    width: 250px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .contributor-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contributor-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #3498db;
+  }
+  
+  .contributor-link {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
   .footer {
     margin-top: 40px;
     padding-top: 20px;
@@ -106,7 +162,7 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   }
   
   @media (max-width: 768px) {
-    .resources {
+    .resources, .contributors {
       flex-direction: column;
     }
   }
