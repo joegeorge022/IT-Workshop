@@ -19,19 +19,34 @@ Welcome to the IT Workshop repository. This project contains three experiments t
 
 Learn how to create a basic web page with HTML and CSS and deploy it on a local web server.
 
-<a href="Exp-1/README.html" class="btn" >View Experiment 1</a>
+<div class="protected-content">
+  <form class="password-form" onsubmit="return checkPassword(1)">
+    <input type="password" id="password-1" class="password-input" placeholder="Enter password to view">
+    <button type="submit" class="password-submit">Access Experiment 1</button>
+  </form>
+</div>
 
 ### Experiment 2: Use JavaScript to validate forms
 
 Implement client-side form validation using JavaScript to enhance user experience and data integrity.
 
-<a href="Exp-2/README.html" class="btn" >View Experiment 2</a>
+<div class="protected-content">
+  <form class="password-form" onsubmit="return checkPassword(2)">
+    <input type="password" id="password-2" class="password-input" placeholder="Enter password to view">
+    <button type="submit" class="password-submit">Access Experiment 2</button>
+  </form>
+</div>
 
 ### Experiment 3: Create an image slider using HTML, CSS, and JavaScript
 
 Build an interactive image slider/gallery with navigation controls using HTML, CSS, and JavaScript.
 
-<a href="Exp-3/README.html" class="btn" >View Experiment 3</a>
+<div class="protected-content">
+  <form class="password-form" onsubmit="return checkPassword(3)">
+    <input type="password" id="password-3" class="password-input" placeholder="Enter password to view">
+    <button type="submit" class="password-submit">Access Experiment 3</button>
+  </form>
+</div>
 
 ## 📚 Learning Resources
 
@@ -266,3 +281,249 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   }
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style type="text/css">
+  .btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 8px 16px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: #2980b9;
+    text-decoration: none;
+  }
+  
+  .download-section {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .protected-content {
+    position: relative;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .password-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  
+  .password-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .password-submit {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .password-submit:hover {
+    background-color: #2980b9;
+  }
+  
+  .download-btn {
+    display: inline-block;
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .download-btn:hover {
+    background-color: #219653;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+  }
+  
+  .download-btn i {
+    margin-right: 8px;
+  }
+  
+  .resources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+  }
+  
+  .resource {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    padding-top: 40px;
+  }
+  
+  .resource-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .resource:nth-child(1) .resource-icon {
+    color: #E34F26;
+  }
+  
+  .resource:nth-child(2) .resource-icon {
+    color: #1572B6;
+  }
+  
+  .resource:nth-child(3) .resource-icon {
+    color: #F7DF1E;
+  }
+  
+  .contributors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 30px auto;
+    max-width: 800px;
+  }
+  
+  .contributor-card {
+    width: 250px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contributor-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+  
+  .contributor-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #3498db;
+    transition: transform 0.4s ease-in-out, border-color 0.4s ease;
+  }
+  
+  .contributor-card:hover .contributor-img {
+    transform: scale(1.05);
+    border-color: #2980b9;
+  }
+  
+  .contributor-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    text-decoration: none !important;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .contributor-link i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+  }
+  
+  .contributor-link:hover {
+    background-color: #333;
+    color: white;
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    text-decoration: none !important;
+  }
+  
+  .footer {
+    text-align: center;
+    margin: 40px auto 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    max-width: 800px;
+  }
+  
+  @media (max-width: 768px) {
+    .resources, .contributors {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .contributor-card {
+      width: 85%;
+      max-width: 300px;
+      margin: 0 auto 20px;
+    }
+    
+    .resource {
+      width: 85%;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+    
+    .footer {
+      width: 90%;
+      padding: 0 15px;
+    }
+  }
+</style>
+<script>
+  function checkPassword(experimentId) {
+    const password = document.getElementById(`password-${experimentId}`).value;
+    const passwords = {
+      1: "html2025",
+      2: "js2025",
+      3: "gallery2025"
+    };
+    
+    if (password === passwords[experimentId]) {
+      localStorage.setItem(`exp-${experimentId}-access`, "granted");
+      window.location.href = `Exp-${experimentId}/README.html`;
+    } else {
+      alert("Incorrect password. Please try again.");
+    }
+    return false;
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const path = window.location.pathname;
+    if (path.includes('/Exp-')) {
+      const expNumber = path.match(/Exp-(\d+)/)[1];
+      if (!localStorage.getItem(`exp-${expNumber}-access`)) {
+        window.location.href = "../README.html";
+      }
+    }
+  });
+</script>
