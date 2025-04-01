@@ -5,7 +5,7 @@ title: JavaScript Tutorial
 
 <a href="../README.html" class="back-btn">← Back to Main Page</a>
 
-# JavaScript Tutorial
+# Introduction to JavaScript: Programming the Web
 
 ## Basics of JavaScript
 
@@ -158,7 +158,8 @@ JavaScript is often used to handle events like clicks or key presses.
 In this example, clicking the button triggers the `showMessage()` function, which shows an alert.
 
 
-## Understand and Learn
+
+# Understand and Learn
 
 ## Example: Adding Two Numbers
 
