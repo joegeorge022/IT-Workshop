@@ -44,6 +44,8 @@ Every HTML document has a standard structure, beginning with the `<!DOCTYPE html
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Web Page</title>
 </head>
 <body>
