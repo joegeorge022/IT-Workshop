@@ -337,10 +337,10 @@ Here’s a video tutorial:
   text-decoration: none;
 }
 
-/* Progress Bar Styles */
 .progress-container {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 1000;
   width: 100%;
   height: 8px;

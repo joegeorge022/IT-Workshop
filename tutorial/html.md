@@ -3,6 +3,10 @@ layout: default
 title: HTML Tutorial
 ---
 
+<div class="progress-container">
+  <div class="progress-bar" id="progressBar"></div>
+</div>
+
 <a href="../README.html" class="back-btn">← Back to Main Page</a>
 
 # Introduction to HTML: Structuring the Web
@@ -248,6 +252,24 @@ Here’s a video tutorial:
   text-decoration: none;
 }
 
+.progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 8px;
+  background: transparent;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #3498db;
+  width: 0%;
+  border-radius: 0 4px 4px 0;
+  transition: width 0.2s ease;
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -295,3 +317,14 @@ Here’s a video tutorial:
   text-decoration: underline;
 }
 </style>
+
+<script>
+window.onscroll = function() {updateProgressBar()};
+
+function updateProgressBar() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("progressBar").style.width = scrolled + "%";
+}
+</script>
