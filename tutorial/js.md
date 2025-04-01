@@ -401,6 +401,38 @@ Here’s a video tutorial:
 .toc a:hover {
   text-decoration: underline;
 }
+
+.code-container {
+  position: relative;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.copy-btn:hover {
+  opacity: 1;
+  background-color: #e0e0e0;
+}
+
+.copy-btn:active {
+  background-color: #d0d0d0;
+}
+
+.copy-success {
+  background-color: #4CAF50 !important;
+  color: white;
+}
 </style>
 
 <script>
@@ -412,4 +444,33 @@ function updateProgressBar() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("progressBar").style.width = scrolled + "%";
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('pre').forEach(function(pre) {
+    const container = document.createElement('div');
+    container.className = 'code-container';
+    
+    const button = document.createElement('button');
+    button.className = 'copy-btn';
+    button.textContent = 'Copy';
+    
+    button.addEventListener('click', function() {
+      const code = pre.textContent;
+      navigator.clipboard.writeText(code).then(function() {
+        button.textContent = 'Copied!';
+        button.classList.add('copy-success');
+        
+        setTimeout(function() {
+          button.textContent = 'Copy';
+          button.classList.remove('copy-success');
+        }, 2000);
+      });
+    });
+    
+    pre.parentNode.insertBefore(container, pre);
+    container.appendChild(pre);
+    
+    container.appendChild(button);
+  });
+});
 </script>
