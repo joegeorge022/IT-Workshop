@@ -10,24 +10,27 @@ title: HTML Tutorial
 <div class="toc">
   <h2>Table of Contents</h2>
   <ul>
-    <li><a href="#what-is-html">What is HTML?</a></li>
-    <li><a href="#basic-structure-of-an-html-document">Basic Structure</a></li>
+    <li><a href="#introduction-to-html-structuring-the-web">Introduction to HTML</a></li>
+    <li><a href="#1-basic-structure-of-an-html-document">1. Basic Structure of an HTML Document</a></li>
     <li><a href="#common-html-elements">Common HTML Elements</a>
       <ul>
         <li><a href="#2-headings-h1-to-h6">2. Headings</a></li>
         <li><a href="#3-paragraphs-p">3. Paragraphs</a></li>
-        <li><a href="#links">Links</a></li>
-        <li><a href="#images">Images</a></li>
-        <li><a href="#lists">Lists</a></li>
-        <li><a href="#tables">Tables</a></li>
-        <li><a href="#forms">Forms</a></li>
+        <li><a href="#4-links-a">4. Links</a></li>
+        <li><a href="#5-images-img">5. Images</a></li>
+        <li><a href="#6-lists">6. Lists</a></li>
+        <li><a href="#7-divisions-div-and-spans-span">7. Divisions and Spans</a></li>
+        <li><a href="#8-tables-table">8. Tables</a></li>
+        <li><a href="#9-forms-form">9. Forms</a></li>
+        <li><a href="#10-comments">10. Comments</a></li>
       </ul>
     </li>
+    <li><a href="#example">Complete Example</a></li>
     <li><a href="#learn-html-in-1-hour">Video Tutorial</a></li>
   </ul>
 </div>
 
-HTML (Hypertext Markup Language) is the foundation of web development. It provides the structure and layout of web pages and helps to define elements like headings, paragraphs, links, and images. In this blog post, we’ll explore the essential HTML elements with example code to help you start building your own web pages.
+HTML (Hypertext Markup Language) is the foundation of web development. It provides the structure and layout of web pages and helps to define elements like headings, paragraphs, links, and images. In this, we’ll explore the essential HTML elements with example code to help you start building your own web pages.
 
 ### 1. Basic Structure of an HTML Document
 Every HTML document has a standard structure, beginning with the `<!DOCTYPE html>` declaration and followed by `html`, `head`, and `body` tags. Here’s the basic structure of an HTML file:

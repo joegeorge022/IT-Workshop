@@ -11,6 +11,7 @@ title: CSS Tutorial
   <h2>Table of Contents</h2>
   <ul>
     <li><a href="#introduction-to-css-styling-the-web">Introduction to CSS</a></li>
+    <li><a href="#key-concepts-in-css">Key Concepts in CSS</a></li>
     <li><a href="#css-syntax">CSS Syntax</a></li>
     <li><a href="#basic-elements-of-css">Basic Elements of CSS</a>
       <ul>
@@ -38,6 +39,7 @@ title: CSS Tutorial
         <li><a href="#external-css">External CSS</a></li>
       </ul>
     </li>
+    <li><a href="#conclusion">Conclusion</a></li>
     <li><a href="#learn-css-in-1-hour">Video Tutorial</a></li>
   </ul>
 </div>
