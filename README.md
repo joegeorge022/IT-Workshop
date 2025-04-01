@@ -13,9 +13,21 @@ Welcome to the IT Workshop repository. This project contains three experiments t
   </a>
 </div>
 
-## 📋 Experiments
+## 📝 Tutorials
 
+### HTML Tutorial
+
+Learn the fundamentals of HTML, the building blocks of web pages.
+
+<div class="tutorial-section">
+  <a href="tutorial/readme.html" class="tutorial-btn">
+    <i class="fas fa-book"></i> View HTML Tutorial
+  </a>
+</div>
+
+## 📋 Experiments
 ### Experiment 1: Create a web page and deploy on a local web server
+
 
 Learn how to create a basic web page with HTML and CSS and deploy it on a local web server.
 
