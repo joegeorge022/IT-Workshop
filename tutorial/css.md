@@ -8,6 +8,7 @@ title: CSS Tutorial
 </div>
 
 <a href="../README.html" class="back-btn">← Back to Main Page</a>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 # Introduction to CSS: Styling the Web
 
