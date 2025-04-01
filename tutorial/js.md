@@ -7,6 +7,20 @@ title: JavaScript Tutorial
 
 # Introduction to JavaScript: Programming the Web
 
+<div class="toc">
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><a href="#basics-of-javascript">Basics of JavaScript</a></li>
+    <li><a href="#understand-and-learn">Practical Examples</a>
+      <ul>
+        <li><a href="#example-adding-two-numbers">Adding Two Numbers</a></li>
+        <li><a href="#example-finding-prime-numbers">Finding Prime Numbers</a></li>
+      </ul>
+    </li>
+    <li><a href="#learn-javascript-in-12-hours">Video Tutorial</a></li>
+  </ul>
+</div>
+
 ## Basics of JavaScript
 
 JavaScript is a powerful, versatile language used for adding interactivity to websites. If you're just starting with web development, JavaScript is an essential tool in your toolkit. In this post, we’ll cover the basics of JavaScript, including how to add JavaScript to your HTML, basic syntax, variables, data types, functions, and event handling.
@@ -329,5 +343,31 @@ Here’s a video tutorial:
     width: 100%;
     height: 100%;
     border-radius: 12px;
+}
+
+.toc {
+  background-color: #f8f9fa;
+  border: 1px solid #eaecef;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin: 20px 0;
+}
+
+.toc h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.toc ul {
+  padding-left: 20px;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #0366d6;
+}
+
+.toc a:hover {
+  text-decoration: underline;
 }
 </style>

@@ -245,4 +245,30 @@ Here’s a video tutorial:
     height: 100%;
     border-radius: 12px;
 }
+
+.toc {
+  background-color: #f8f9fa;
+  border: 1px solid #eaecef;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin: 20px 0;
+}
+
+.toc h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.toc ul {
+  padding-left: 20px;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #0366d6;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
 </style>
