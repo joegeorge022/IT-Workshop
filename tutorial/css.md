@@ -438,6 +438,18 @@ Update the `<link>` path to:
 ```
 Using external CSS is highly recommended for building professional websites, as it ensures clean, modular, and scalable code.
 
+## Learn CSS in 1 Hour
+
+Here’s a video tutorial:
+
+<div class="video-container">
+    <iframe width="1031" height="580" src="https://www.youtube.com/embed/wRNinF7YQqQ" 
+    title="Learn CSS in 1 hour 🎨" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+</div>
+
 
 <style>
     .back-btn {
@@ -454,5 +466,26 @@ Using external CSS is highly recommended for building professional websites, as 
 .back-btn:hover {
   background-color: #ddd;
   text-decoration: none;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
 }
 </style>
