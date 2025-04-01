@@ -452,16 +452,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const button = document.createElement('button');
     button.className = 'copy-btn';
-    button.textContent = 'Copy';
+    button.innerHTML = '<i class="fas fa-copy"></i> Copy';
     
     button.addEventListener('click', function() {
       const code = pre.textContent;
       navigator.clipboard.writeText(code).then(function() {
-        button.textContent = 'Copied!';
+        button.innerHTML = '<i class="fas fa-check"></i> Copied!';
         button.classList.add('copy-success');
         
         setTimeout(function() {
-          button.textContent = 'Copy';
+          button.innerHTML = '<i class="fas fa-copy"></i> Copy';
           button.classList.remove('copy-success');
         }, 2000);
       });
