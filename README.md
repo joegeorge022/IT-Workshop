@@ -54,7 +54,6 @@ Learn how to create a basic web page with HTML and CSS and deploy it on a local 
   <form id="password-form-1" class="password-form" onsubmit="return checkPassword(1)">
     <input type="password" id="password-1" class="password-input" placeholder="Enter password to view">
     <button type="submit" class="password-submit">Access Experiment 1</button>
-    👉<a href="/Exp-1/index.html" target="_blank" style>See the live implementation</a>
   </form>
 </div>
 
