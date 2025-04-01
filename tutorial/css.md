@@ -1,3 +1,10 @@
+---
+layout: default
+title: CSS Tutorial
+---
+
+<a href="../README.html" class="back-btn">← Back to Main Page</a>
+
 ## Introduction to CSS: Styling the Web
 
 CSS (Cascading Style Sheets) is a styling language used to describe the look and formatting of HTML documents. With CSS, we can control the layout, colors, fonts, spacing, and more, making our websites attractive and user-friendly.
@@ -430,3 +437,22 @@ Update the `<link>` path to:
 <link rel="stylesheet" href="css/styles.css">
 ```
 Using external CSS is highly recommended for building professional websites, as it ensures clean, modular, and scalable code.
+
+
+<style>
+    .back-btn {
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.back-btn:hover {
+  background-color: #ddd;
+  text-decoration: none;
+}
+</style>

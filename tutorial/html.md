@@ -200,3 +200,21 @@ Comments in HTML are written within `<!-- -->`. They’re not displayed in the b
 </body>
 </html>
 ```
+
+<style>
+    .back-btn {
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.back-btn:hover {
+  background-color: #ddd;
+  text-decoration: none;
+}
+</style>
