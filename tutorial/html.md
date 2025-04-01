@@ -42,6 +42,7 @@ Every HTML document has a standard structure, beginning with the `<!DOCTYPE html
 
 ```html
 <!DOCTYPE html>
+<html lang="en">
 <html>
 <head>
     <meta charset="UTF-8">
