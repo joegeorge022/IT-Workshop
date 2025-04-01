@@ -10,7 +10,18 @@ title: JavaScript Tutorial
 <div class="toc">
   <h2>Table of Contents</h2>
   <ul>
-    <li><a href="#basics-of-javascript">Basics of JavaScript</a></li>
+    <li><a href="#introduction-to-javascript-programming-the-web">Introduction</a></li>
+    <li><a href="#basics-of-javascript">Basics of JavaScript</a>
+      <ul>
+        <li><a href="#1-adding-javascript-to-html">Adding JavaScript to HTML</a></li>
+        <li><a href="#2-variables-and-data-types">Variables and Data Types</a></li>
+        <li><a href="#3-basic-operations">Basic Operations</a></li>
+        <li><a href="#4-functions">Functions</a></li>
+        <li><a href="#5-conditional-statements">Conditional Statements</a></li>
+        <li><a href="#6-looping-statements">Looping Statements</a></li>
+        <li><a href="#7-event-handling">Event Handling</a></li>
+      </ul>
+    </li>
     <li><a href="#understand-and-learn">Practical Examples</a>
       <ul>
         <li><a href="#example-adding-two-numbers">Adding Two Numbers</a></li>

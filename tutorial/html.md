@@ -7,6 +7,26 @@ title: HTML Tutorial
 
 # Introduction to HTML: Structuring the Web
 
+<div class="toc">
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><a href="#what-is-html">What is HTML?</a></li>
+    <li><a href="#basic-structure-of-an-html-document">Basic Structure</a></li>
+    <li><a href="#common-html-elements">Common HTML Elements</a>
+      <ul>
+        <li><a href="#2-headings-h1-to-h6">2. Headings</a></li>
+        <li><a href="#3-paragraphs-p">3. Paragraphs</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#forms">Forms</a></li>
+      </ul>
+    </li>
+    <li><a href="#learn-html-in-1-hour">Video Tutorial</a></li>
+  </ul>
+</div>
+
 HTML (Hypertext Markup Language) is the foundation of web development. It provides the structure and layout of web pages and helps to define elements like headings, paragraphs, links, and images. In this blog post, we’ll explore the essential HTML elements with example code to help you start building your own web pages.
 
 ### 1. Basic Structure of an HTML Document

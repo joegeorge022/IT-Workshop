@@ -5,7 +5,42 @@ title: CSS Tutorial
 
 <a href="../README.html" class="back-btn">← Back to Main Page</a>
 
-## Introduction to CSS: Styling the Web
+# Introduction to CSS: Styling the Web
+
+<div class="toc">
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><a href="#introduction-to-css-styling-the-web">Introduction to CSS</a></li>
+    <li><a href="#css-syntax">CSS Syntax</a></li>
+    <li><a href="#basic-elements-of-css">Basic Elements of CSS</a>
+      <ul>
+        <li><a href="#1-selectors">1. Selectors</a></li>
+        <li><a href="#2-properties-and-values">2. Properties and Values</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-css-box-model">3. CSS Box Model</a>
+      <ul>
+        <li><a href="#margin">Margin</a></li>
+        <li><a href="#padding">Padding</a></li>
+        <li><a href="#border">Border</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-text-styling">4. Text Styling</a>
+      <ul>
+        <li><a href="#text-alignment">Text Alignment</a></li>
+        <li><a href="#text-decoration">Text Decoration</a></li>
+      </ul>
+    </li>
+    <li><a href="#ways-to-add-css">Ways to Add CSS</a>
+      <ul>
+        <li><a href="#inline-css">Inline CSS</a></li>
+        <li><a href="#internal-css">Internal CSS</a></li>
+        <li><a href="#external-css">External CSS</a></li>
+      </ul>
+    </li>
+    <li><a href="#learn-css-in-1-hour">Video Tutorial</a></li>
+  </ul>
+</div>
 
 CSS (Cascading Style Sheets) is a styling language used to describe the look and formatting of HTML documents. With CSS, we can control the layout, colors, fonts, spacing, and more, making our websites attractive and user-friendly.
 
@@ -403,29 +438,6 @@ a:hover {
 ```
 
 ### Folder Structure for the Example
-```
-project-folder/
-│
-├── index.html      // HTML file
-├── styles.css      // CSS file
-```
-
-### Steps to Run the Example
-1. Create a folder (e.g., `project-folder`).
-2. Inside the folder:
-   - Create a file named `index.html` and paste the HTML code above.
-   - Create another file named `styles.css` and paste the CSS code above.
-3. Open the `index.html` file in your browser to see the styled webpage.
-
-### Key Notes
-The `<link>` element:
-```html
-<link rel="stylesheet" href="styles.css">
-```
-- `rel="stylesheet"` specifies that this is a stylesheet.
-- `href="styles.css"` specifies the path to the CSS file.
-
-For larger projects, use a well-organized folder structure:
 ```
 project-folder/
 ├── css/
