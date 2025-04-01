@@ -13,9 +13,40 @@ Welcome to the IT Workshop repository. This project contains three experiments t
   </a>
 </div>
 
-## 📋 Experiments
+## 📝 Tutorials
 
+<div class="tutorials-container">
+  <div class="tutorial-card">
+    <i class="fab fa-html5 tutorial-icon"></i>
+    <h3>HTML Tutorial</h3>
+    <p>Learn the fundamentals of HTML, the building blocks of web pages.</p>
+    <a href="tutorial/html.html" class="tutorial-btn">
+      <i class="fas fa-book"></i> View Tutorial
+    </a>
+  </div>
+  
+  <div class="tutorial-card">
+    <i class="fab fa-css3-alt tutorial-icon"></i>
+    <h3>CSS Tutorial</h3>
+    <p>Master CSS to style and layout your web pages effectively.</p>
+    <a href="tutorial/css.html" class="tutorial-btn">
+      <i class="fas fa-book"></i> View Tutorial
+    </a>
+  </div>
+  
+  <div class="tutorial-card">
+    <i class="fab fa-js tutorial-icon"></i>
+    <h3>JavaScript Tutorial</h3>
+    <p>Explore JavaScript to add interactivity to your websites.</p>
+    <a href="tutorial/js.html" class="tutorial-btn">
+      <i class="fas fa-book"></i> View Tutorial
+    </a>
+  </div>
+</div>
+
+## 📋 Experiments
 ### Experiment 1: Create a web page and deploy on a local web server
+
 
 Learn how to create a basic web page with HTML and CSS and deploy it on a local web server.
 
@@ -534,30 +565,97 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     border-top: 1px solid #eee;
     max-width: 800px;
   }
+  .tutorials-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px 0;
+  justify-content: center;
+}
+
+.tutorial-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  padding: 25px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  padding-top: 40px;
+}
+
+.tutorial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.tutorial-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.tutorial-card:nth-child(1) .tutorial-icon {
+  color: #E34F26;
+}
+
+.tutorial-card:nth-child(2) .tutorial-icon {
+  color: #1572B6;
+}
+
+.tutorial-card:nth-child(3) .tutorial-icon {
+  color: #F7DF1E;
+}
+
+.tutorial-btn {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  margin: 15px 0 5px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tutorial-btn:hover {
+  background-color: #2980b9;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+.tutorial-btn i {
+  margin-right: 8px;
+}
   
   @media (max-width: 768px) {
-    .resources, .contributors, .teachers {
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .contributor-card, .teacher-card {
-      width: 85%;
-      max-width: 300px;
-      margin: 0 auto 20px;
-    }
-    
-    .resource {
-      width: 85%;
-      max-width: 300px;
-      margin-bottom: 20px;
-    }
-    
-    .footer {
-      width: 90%;
-      padding: 0 15px;
-    }
+  .resources, .contributors, .teachers, .tutorials-container {
+    flex-direction: column;
+    align-items: center;
   }
+  
+  .contributor-card, .teacher-card, .tutorial-card {
+    width: 85%;
+    max-width: 300px;
+    margin: 0 auto 20px;
+  }
+  
+  .resource {
+    width: 85%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .footer {
+    width: 90%;
+    padding: 0 15px;
+  }
+}
 </style>
 <script>
   function checkPassword(experimentId) {
