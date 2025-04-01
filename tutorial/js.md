@@ -3,6 +3,10 @@ layout: default
 title: JavaScript Tutorial
 ---
 
+<div class="progress-container">
+  <div class="progress-bar" id="progressBar"></div>
+</div>
+
 <a href="../README.html" class="back-btn">← Back to Main Page</a>
 
 # Introduction to JavaScript: Programming the Web
@@ -41,7 +45,6 @@ You can add JavaScript directly into your HTML file. The simplest way is by usin
 
 ```html
 <!DOCTYPE html>
-<html>
 <head>
     <title>JavaScript Basics</title>
 </head>
@@ -168,7 +171,7 @@ JavaScript is often used to handle events like clicks or key presses.
 #### Example: Button Click Event
 ```html
 <!DOCTYPE html>
-<html>
+<html
 <body>
     <button onclick="showMessage()">Click Me</button>
     <script>
@@ -190,7 +193,6 @@ In this example, clicking the button triggers the `showMessage()` function, whic
 
 ```html
 <!DOCTYPE html>
-<html>
 <head>
     <title>Add Two Numbers</title>
 </head>
@@ -246,7 +248,7 @@ In this example, clicking the button triggers the `showMessage()` function, whic
 
 ```html
 <!DOCTYPE html>
-<html>
+<html
 <head>
     <title>Prime Numbers</title>
 </head>
@@ -335,6 +337,24 @@ Here’s a video tutorial:
   text-decoration: none;
 }
 
+/* Progress Bar Styles */
+.progress-container {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 8px;
+  background: transparent;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #3498db;
+  width: 0%;
+  border-radius: 0 4px 4px 0;
+  transition: width 0.2s ease;
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -382,3 +402,14 @@ Here’s a video tutorial:
   text-decoration: underline;
 }
 </style>
+
+<script>
+window.onscroll = function() {updateProgressBar()};
+
+function updateProgressBar() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("progressBar").style.width = scrolled + "%";
+}
+</script>
