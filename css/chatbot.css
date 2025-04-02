@@ -479,3 +479,38 @@
 .message-content tr:hover {
   background-color: #f0f4f8;
 }
+
+
+.bot-icon::before,
+.user-icon::before,
+.chatbot-button::before,
+.send-btn::before,
+.chatbot-toggle::before,
+.chatbot-fullscreen-toggle::before {
+  font-family: 'FontAwesome', sans-serif;
+  display: inline-block;
+}
+
+.bot-icon:empty::before {
+  content: "🤖";
+}
+
+.user-icon:empty::before {
+  content: "👤";
+}
+
+.chatbot-button:empty::before {
+  content: "💬";
+}
+
+.send-btn:empty::before {
+  content: "📤";
+}
+
+.chatbot-toggle:empty::before {
+  content: "✖";
+}
+
+.chatbot-fullscreen-toggle:empty::before {
+  content: "⤢";
+}
