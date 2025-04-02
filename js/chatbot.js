@@ -44,6 +44,8 @@ const chatbot = {
     const chatbotContainer = document.querySelector('.chatbot-container');
     const sendButton = document.querySelector('.send-btn');
     const textarea = document.querySelector('.chatbot-input textarea');
+    const fullscreenToggle = document.querySelector('.chatbot-fullscreen-toggle');
+    const messagesContainer = document.querySelector('.chatbot-messages');
     
     chatbotButton.addEventListener('click', () => {
       chatbotContainer.classList.add('active');
@@ -52,7 +54,23 @@ const chatbot = {
     
     chatbotToggle.addEventListener('click', () => {
       chatbotContainer.classList.remove('active');
+      chatbotContainer.classList.remove('enlarged');
       chatbotButton.style.display = 'block';
+      fullscreenToggle.innerHTML = '<i class="fas fa-expand"></i>';
+    });
+    
+    fullscreenToggle.addEventListener('click', () => {
+      chatbotContainer.classList.toggle('enlarged');
+      
+      if (chatbotContainer.classList.contains('enlarged')) {
+        fullscreenToggle.innerHTML = '<i class="fas fa-compress"></i>';
+      } else {
+        fullscreenToggle.innerHTML = '<i class="fas fa-expand"></i>';
+      }
+      
+      setTimeout(() => {
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+      }, 300);
     });
     
     sendButton.addEventListener('click', () => this.sendMessage());
