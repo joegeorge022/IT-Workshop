@@ -178,5 +178,5 @@ function cancelPassword() {
   localStorage.removeItem('target-exp');
 }
 </script>
-<link rel="stylesheet" href="css/chatbot.css">
-<script src="js/chatbot.js"></script>
+<link rel="stylesheet" href="../css/chatbot.css">
+<script src="../js/chatbot.js"></script>

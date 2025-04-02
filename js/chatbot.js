@@ -139,7 +139,19 @@ const chatbot = {
           messages: [
             {
               role: 'system',
-              content: 'You are a helpful web development assistant specialized in HTML, CSS, and JavaScript. Provide concise, accurate information about web development concepts. Include code examples when appropriate. Keep responses focused on web development topics only. If asked about other topics, politely redirect to web development. Format code examples with proper markdown syntax using ```language code blocks.'
+              content: `You are a helpful web development assistant specialized in HTML, CSS, and JavaScript. 
+              
+              Provide concise, accurate information about web development concepts. Include code examples when appropriate.
+              
+              Format your responses properly:
+              - Use markdown formatting consistently
+              - For code snippets, always use proper code blocks with language specification (e.g. \`\`\`html, \`\`\`css, \`\`\`javascript)
+              - Use headings (# or ##) for section titles
+              - Use bullet points or numbered lists for steps or multiple items
+              - Format inline code with backticks
+              - Use bold for emphasis
+              
+              Keep responses focused on web development topics only. If asked about other topics, politely redirect to web development.`
             },
             {
               role: 'user',
@@ -194,11 +206,30 @@ const chatbot = {
 
   formatBotResponse: function(response) {
     let formattedResponse = response
-      .replace(/```([a-z]*)([\s\S]*?)```/g, '<pre><code class="language-$1">$2</code></pre>')
+      .replace(/```([a-z]*)([\s\S]*?)```/g, function(match, language, code) {
+        code = code.trim();
+        return `<pre><code class="language-${language}">${code}</code></pre>`;
+      })
       .replace(/`([^`]+)`/g, '<code>$1</code>')
+      .replace(/^### (.*$)/gm, '<h3>$1</h3>')
+      .replace(/^## (.*$)/gm, '<h2>$1</h2>')
+      .replace(/^# (.*$)/gm, '<h1>$1</h1>')
       .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
       .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+      .replace(/^\s*[-*+]\s+(.*)/gm, '<li>$1</li>')
+      .replace(/^\s*(\d+)\.\s+(.*)/gm, '<li>$2</li>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>')
+      .replace(/\n\n/g, '</p><p>')
       .replace(/\n/g, '<br>');
+    
+    if (!formattedResponse.startsWith('<')) {
+      formattedResponse = '<p>' + formattedResponse + '</p>';
+    }
+    
+    formattedResponse = formattedResponse
+      .replace(/<li>(?:(?!<\/li>).)*<\/li>(?:\s*<li>(?:(?!<\/li>).)*<\/li>)*/g, function(match) {
+        return '<ul>' + match + '</ul>';
+      });
     
     return formattedResponse;
   },
@@ -211,5 +242,7 @@ const chatbot = {
 };
 
 document.addEventListener('DOMContentLoaded', function() {
-  chatbot.init();
+  if (!document.querySelector('.chatbot-container')) {
+    chatbot.init();
+  }
 });
