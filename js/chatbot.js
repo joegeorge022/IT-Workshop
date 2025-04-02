@@ -10,7 +10,10 @@ const chatbot = {
     chatbotContainer.innerHTML = `
       <div class="chatbot-header">
         <h3><i class="fas fa-robot"></i> Web Dev Assistant</h3>
-        <button class="chatbot-toggle"><i class="fas fa-times"></i></button>
+        <div class="chatbot-controls">
+          <button class="chatbot-fullscreen-toggle"><i class="fas fa-expand"></i></button>
+          <button class="chatbot-toggle"><i class="fas fa-times"></i></button>
+        </div>
       </div>
       <div class="chatbot-messages">
         <div class="message bot-message">
@@ -24,6 +27,7 @@ const chatbot = {
         <textarea placeholder="Type your question here..." rows="1"></textarea>
         <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
       </div>
+      <div class="chatbot-resize"></div>
     `;
     
     const chatbotButton = document.createElement('button');
@@ -205,12 +209,16 @@ const chatbot = {
   },
 
   formatBotResponse: function(response) {
-    let formattedResponse = response
+    let escapedResponse = response.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    
+    let formattedResponse = escapedResponse
       .replace(/```([a-z]*)([\s\S]*?)```/g, function(match, language, code) {
         code = code.trim();
         return `<pre><code class="language-${language}">${code}</code></pre>`;
       })
-      .replace(/`([^`]+)`/g, '<code>$1</code>')
+      .replace(/`([^`]+)`/g, function(match, code) {
+        return '<code>' + code + '</code>';
+      })
       .replace(/^### (.*$)/gm, '<h3>$1</h3>')
       .replace(/^## (.*$)/gm, '<h2>$1</h2>')
       .replace(/^# (.*$)/gm, '<h1>$1</h1>')
