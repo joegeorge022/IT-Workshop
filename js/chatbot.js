@@ -229,7 +229,33 @@ const chatbot = {
   formatBotResponse: function(response) {
     let escapedResponse = response.replace(/</g, '&lt;').replace(/>/g, '&gt;');
     
-    let formattedResponse = escapedResponse
+    let formattedResponse = escapedResponse;
+    
+    formattedResponse = formattedResponse.replace(/\|(.+)\|\s*\n\|(?:-+\|)+\s*\n((?:\|.+\|\s*\n)+)/g, function(match, headerRow, bodyRows) {
+      const headers = headerRow.split('|').filter(cell => cell.trim() !== '').map(cell => cell.trim());
+      const rows = bodyRows.trim().split('\n').map(row => {
+        return row.split('|').filter(cell => cell.trim() !== '').map(cell => cell.trim());
+      });
+      
+      let tableHtml = '<table><thead><tr>';
+      headers.forEach(header => {
+        tableHtml += `<th>${header}</th>`;
+      });
+      tableHtml += '</tr></thead><tbody>';
+      
+      rows.forEach(row => {
+        tableHtml += '<tr>';
+        row.forEach(cell => {
+          tableHtml += `<td>${cell}</td>`;
+        });
+        tableHtml += '</tr>';
+      });
+      
+      tableHtml += '</tbody></table>';
+      return tableHtml;
+    });
+    
+    formattedResponse = formattedResponse
       .replace(/```([a-z]*)([\s\S]*?)```/g, function(match, language, code) {
         code = code.trim();
         return `<pre class="code-block"><div class="code-header">${language}</div><code class="language-${language}">${code}</code></pre>`;
