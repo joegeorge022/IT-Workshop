@@ -232,7 +232,7 @@ const chatbot = {
     let formattedResponse = escapedResponse
       .replace(/```([a-z]*)([\s\S]*?)```/g, function(match, language, code) {
         code = code.trim();
-        return `<pre><code class="language-${language}">${code}</code></pre>`;
+        return `<pre class="code-block"><div class="code-header">${language}</div><code class="language-${language}">${code}</code></pre>`;
       })
       .replace(/`([^`]+)`/g, function(match, code) {
         return '<code>' + code + '</code>';
