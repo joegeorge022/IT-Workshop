@@ -475,3 +475,5 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+<link rel="stylesheet" href="../css/chatbot.css">
+<script src="../js/chatbot.js"></script>

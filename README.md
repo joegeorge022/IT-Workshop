@@ -699,3 +699,5 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     }
   });
 </script>
+<link rel="stylesheet" href="css/chatbot.css">
+<script src="js/chatbot.js"></script>
