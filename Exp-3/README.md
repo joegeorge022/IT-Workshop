@@ -53,11 +53,10 @@ The gallery displays images in a grid, and when an image is clicked, it opens in
 Here’s a video tutorial:
 
 <div class="video-container">
-    <iframe width="1031" height="580" src="https://www.youtube.com/embed/HD13eq_Pmp8" 
-    title="Learn HTML in 1 hour 🌎" frameborder="0" 
+    <iframe width="1045" height="588" src="https://www.youtube.com/embed/749ta0nvj8s" 
+    title="Build a JavaScript IMAGE SLIDER in 15 minutes! 🖼️" frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 <br>
