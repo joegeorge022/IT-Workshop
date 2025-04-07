@@ -44,9 +44,10 @@ The implementation consists of two main files:
 </body>
 </html>
 ```
+Above HTML code as XHTML Code is given below👇👇👇
+
 
 ### XHTML Code (KTU Code)
-#### Above HTML code as XHTML Code 
 
 ```xhtml
 <?xml version="1.0" encoding="UTF-8"?>
