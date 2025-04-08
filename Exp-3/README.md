@@ -48,19 +48,23 @@ The gallery displays images in a grid, and when an image is clicked, it opens in
 
 👉 <a href="index.html" target="_blank">See the live implementation</a> of this image gallery.
 
-<div class="experiment-nav">
-  <a href="#" onclick="checkNavAccess(1); return false;" class="nav-btn">Exp-1</a>
-  <a href="#" onclick="checkNavAccess(2); return false;" class="nav-btn">Exp-2</a>
-  <span class="nav-disabled">Exp-3</span>
+## Learn to build an interactive image gallery with slider functionality.
+
+Here’s a video tutorial:
+
+<div class="video-container">
+    <iframe width="1045" height="588" src="https://www.youtube.com/embed/749ta0nvj8s" 
+    title="Build a JavaScript IMAGE SLIDER in 15 minutes! 🖼️" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<div id="password-prompt" class="password-prompt" style="display: none;">
-  <h3>Enter Password</h3>
-  <div class="password-form">
-    <input type="password" id="exp-password" class="password-input" placeholder="Enter experiment password">
-    <button onclick="submitPassword()" class="password-submit">Submit</button>
-    <p><a href="#" onclick="cancelPassword(); return false;">Cancel</a></p>
-  </div>
+<br>
+
+<div class="experiment-nav">
+  <a href="../Exp-1/README.html" class="nav-btn">Exp-1</a>
+  <a href="../Exp-2/README.html" class="nav-btn">Exp-2</a>
+  <span class="nav-disabled">Exp-3</span>
 </div>
 
 <style type="text/css">
@@ -112,74 +116,27 @@ The gallery displays images in a grid, and when an image is clicked, it opens in
   cursor: not-allowed;
 }
 
-.password-prompt {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  text-align: center;
-  max-width: 400px;
-  width: 90%;
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
 }
 
-.password-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.password-submit {
-  background-color: #3498db;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.password-submit:hover {
-  background-color: #2980b9;
-}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}  
 </style>
 
-<script>
-function checkNavAccess(expNumber) {
-  if (localStorage.getItem(`exp-${expNumber}-access`) === "granted") {
-    window.location.href = `../Exp-${expNumber}/README.html`;
-  } else {
-    document.getElementById('password-prompt').style.display = 'block';
-    localStorage.setItem('target-exp', expNumber);
-  }
-}
-
-function submitPassword() {
-  const password = document.getElementById('exp-password').value;
-  const targetExp = localStorage.getItem('target-exp');
-  const passwords = {
-    1: "html2025",
-    2: "js2025",
-    3: "gallery2025"
-  };
-  
-  if (password === passwords[targetExp]) {
-    localStorage.setItem(`exp-${targetExp}-access`, "granted");
-    window.location.href = `../Exp-${targetExp}/README.html`;
-  } else {
-    alert("Incorrect password. Please try again.");
-  }
-}
-
-function cancelPassword() {
-  document.getElementById('password-prompt').style.display = 'none';
-  localStorage.removeItem('target-exp');
-}
-</script>
 <link rel="stylesheet" href="../css/chatbot.css">
 <script src="../js/chatbot.js"></script>

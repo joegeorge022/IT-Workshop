@@ -47,36 +47,32 @@ Welcome to the IT Workshop repository. This project contains three experiments t
 ## 📋 Experiments
 ### Experiment 1: Create a web page and deploy on a local web server
 
-
 Learn how to create a basic web page with HTML and CSS and deploy it on a local web server.
 
-<div class="protected-content">
-  <form id="password-form-1" class="password-form" onsubmit="return checkPassword(1)">
-    <input type="password" id="password-1" class="password-input" placeholder="Enter password to view">
-    <button type="submit" class="password-submit">Access Experiment 1</button>
-  </form>
+<div class="experiment-link">
+  <a href="Exp-1/README.html" class="experiment-btn">
+    <i class="fas fa-eye"></i> View Experiment 1
+  </a>
 </div>
 
 ### Experiment 2: Use JavaScript to validate forms
 
 Implement client-side form validation using JavaScript to enhance user experience and data integrity.
 
-<div class="protected-content">
-  <form id="password-form-2" class="password-form" onsubmit="return checkPassword(2)">
-    <input type="password" id="password-2" class="password-input" placeholder="Enter password to view">
-    <button type="submit" class="password-submit">Access Experiment 2</button>
-  </form>
+<div class="experiment-link">
+  <a href="Exp-2/README.html" class="experiment-btn">
+    <i class="fas fa-eye"></i> View Experiment 2
+  </a>
 </div>
 
 ### Experiment 3: Create an image slider using HTML, CSS, and JavaScript
 
 Build an interactive image slider/gallery with navigation controls using HTML, CSS, and JavaScript.
 
-<div class="protected-content">
-  <form id="password-form-3" class="password-form" onsubmit="return checkPassword(3)">
-    <input type="password" id="password-3" class="password-input" placeholder="Enter password to view">
-    <button type="submit" class="password-submit">Access Experiment 3</button>
-  </form>
+<div class="experiment-link">
+  <a href="Exp-3/README.html" class="experiment-btn">
+    <i class="fas fa-eye"></i> View Experiment 3
+  </a>
 </div>
 
 ## 📚 Learning Resources
@@ -351,43 +347,6 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     margin: 20px 0;
   }
   
-  .protected-content {
-    position: relative;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-  .password-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 15px;
-  }
-  
-  .password-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  .password-submit {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .password-submit:hover {
-    background-color: #2980b9;
-  }
-  
   .download-btn {
     display: inline-block;
     background-color: #27ae60;
@@ -412,6 +371,35 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     margin-right: 8px;
   }
   
+  .experiment-link {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .experiment-btn {
+    display: inline-block;
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .experiment-btn:hover {
+    background-color: #219653;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+  }
+  
+  .experiment-btn i {
+    margin-right: 8px;
+  }
+
   .resources {
     display: flex;
     flex-wrap: wrap;
@@ -657,47 +645,5 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   }
 }
 </style>
-<script>
-  function checkPassword(experimentId) {
-    const password = document.getElementById(`password-${experimentId}`).value;
-    const passwords = {
-      1: "html2025",
-      2: "js2025",
-      3: "gallery2025"
-    };
-    
-    if (password === passwords[experimentId]) {
-      localStorage.setItem(`exp-${experimentId}-access`, "granted");
-      window.location.href = `Exp-${experimentId}/README.html`;
-    } else {
-      alert("Incorrect password. Please try again.");
-    }
-    return false;
-  }
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    const path = window.location.pathname;
-    if (path.includes('/Exp-')) {
-      const expNumber = path.match(/Exp-(\d+)/)[1];
-      if (!localStorage.getItem(`exp-${expNumber}-access`)) {
-        window.location.href = "../README.html";
-      }
-    }
-    
-    for (let i = 1; i <= 3; i++) {
-      if (localStorage.getItem(`exp-${i}-access`) === "granted") {
-        const passwordForm = document.getElementById(`password-form-${i}`);
-        const viewButton = document.createElement('a');
-        viewButton.href = `Exp-${i}/README.html`;
-        viewButton.className = 'download-btn';
-        viewButton.innerHTML = '<i class="fas fa-eye"></i> View Experiment';
-        
-        if (passwordForm) {
-          passwordForm.parentNode.replaceChild(viewButton, passwordForm);
-        }
-      }
-    }
-  });
-</script>
 <link rel="stylesheet" href="css/chatbot.css">
 <script src="js/chatbot.js"></script>
