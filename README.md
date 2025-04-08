@@ -371,6 +371,35 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
     margin-right: 8px;
   }
   
+  .experiment-link {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .experiment-btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .experiment-btn:hover {
+    background-color: #2980b9;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+  }
+  
+  .experiment-btn i {
+    margin-right: 8px;
+  }
+
   .resources {
     display: flex;
     flex-wrap: wrap;
