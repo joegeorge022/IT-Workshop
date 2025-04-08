@@ -378,7 +378,7 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   
   .experiment-btn {
     display: inline-block;
-    background-color: #3498db;
+    background-color: #27ae60;
     color: white;
     padding: 10px 20px;
     margin: 10px 0;
@@ -390,7 +390,7 @@ Build an interactive image slider/gallery with navigation controls using HTML, C
   }
   
   .experiment-btn:hover {
-    background-color: #2980b9;
+    background-color: #219653;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     transform: translateY(-2px);
