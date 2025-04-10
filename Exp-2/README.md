@@ -215,6 +215,7 @@ The form looks similar to Experiment 1 but includes validation feedback when use
   border-radius: 4px;
   margin-bottom: 20px;
   font-size: 14px;
+
 }
 
 .back-btn:hover {
@@ -253,7 +254,6 @@ The form looks similar to Experiment 1 but includes validation feedback when use
   font-weight: bold;
   cursor: not-allowed;
 }
-
 
 .code-container {
   position: relative;
