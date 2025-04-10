@@ -253,6 +253,39 @@ The form looks similar to Experiment 1 but includes validation feedback when use
   font-weight: bold;
   cursor: not-allowed;
 }
+
+
+.code-container {
+  position: relative;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.copy-btn:hover {
+  opacity: 1;
+  background-color: #e0e0e0;
+}
+
+.copy-btn:active {
+  background-color: #d0d0d0;
+}
+
+.copy-success {
+  background-color: #4CAF50 !important;
+  color: white;
+}
 </style>
 
 <link rel="stylesheet" href="../css/chatbot.css">
