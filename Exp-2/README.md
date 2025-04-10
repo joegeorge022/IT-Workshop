@@ -188,18 +188,6 @@ body {
 }
 ```
 
-## Key Features
-
-- Real-time validation as users type
-- Form submission is prevented if validation fails
-- Clear error messages guide users to correct their input
-- Regular expression pattern matching for email validation
-
-## How to Run
-
-1. Clone this repository
-2. Navigate to the Exp-2 directory
-3. Open index.html in your browser
 
 ## Preview
 
