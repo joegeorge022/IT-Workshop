@@ -97,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <button type="submit" class="login-button">Login</button>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
 ```
@@ -131,6 +132,7 @@ Above HTML code as XHTML Code is given below👇👇👇
             <button type="submit" class="login-button">Login</button>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -255,3 +257,33 @@ The form looks similar to Experiment 1 but includes validation feedback when use
 
 <link rel="stylesheet" href="../css/chatbot.css">
 <script src="../js/chatbot.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('pre').forEach(function(pre) {
+    const container = document.createElement('div');
+    container.className = 'code-container';
+    
+    const button = document.createElement('button');
+    button.className = 'copy-btn';
+    button.textContent = 'Copy';
+    
+    button.addEventListener('click', function() {
+      const code = pre.textContent;
+      navigator.clipboard.writeText(code).then(function() {
+        button.textContent = 'Copied!';
+        button.classList.add('copy-success');
+        
+        setTimeout(function() {
+          button.textContent = 'Copy';
+          button.classList.remove('copy-success');
+        }, 2000);
+      });
+    });
+    
+    pre.parentNode.insertBefore(container, pre);
+    container.appendChild(pre);
+    
+    container.appendChild(button);
+  });
+});
+</script>
