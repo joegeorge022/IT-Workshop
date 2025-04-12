@@ -15,7 +15,7 @@ The implementation consists of two main files:
 - `index.html`: Contains the HTML structure of the login form
 - `styles.css`: Contains all the styling for the login page
 
-### HTML Code
+### HTML Code (index.html)
 
 ```html
 <!DOCTYPE html>
@@ -46,8 +46,7 @@ The implementation consists of two main files:
 ```
 Above HTML code as XHTML Code is given below👇👇👇
 
-
-### XHTML Code (KTU Code)
+### XHTML Code (index.xhtml)
 
 ```xhtml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -80,7 +79,9 @@ Above HTML code as XHTML Code is given below👇👇👇
 
 ```
 
-### CSS Code
+#### Note: Use either html or xhtml. Not both. (html is recommended)
+
+### CSS Code (styles.css)
 
 ```css
 body {
